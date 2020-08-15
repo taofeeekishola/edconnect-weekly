@@ -1,0 +1,21 @@
+ body {
+     background-color: aliceblue;
+ }
+
+ h1,
+ h2 {
+     text-decoration: underline;
+     text-align: center;
+ }
+
+ p {
+     color: blue;
+     font-size: large;
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ ul,
+ ol {
+     text-transform: uppercase;
+     padding-top: 10px;
+ }

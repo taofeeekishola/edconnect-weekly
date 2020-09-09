@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <body>
+</head>
 
-        <nav class="nav">
-            <a class="nav-header white-txt" href="index.html">Project Explorer</a>
-            
-            <form action="#" class="search">
-                <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-            </form>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Project Explorer</a>
 
-           <input type="submit" class="button" value="Search">
+            <input id="search_term" type="text" placeholder="Search Projects" />
+            <button id="search-btn" class="btn-major" type="button">Search</button>
 
-            <ul class="nav-list">
-                <li><a class="nav-link white-txt" href="search.html">Projects</a></li>
-                <li><a class="nav-link white-txt" href="createProject.html">Submit</a></li>
-            </ul>
+            <a href="search.html">Projects</a>
+            <a href="createProject.html">Submit</a>
+        </div>
 
-            <ul class="nav-list right">
-                <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-                <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-            </ul>
+        <div class="nav-right">
+            <a href="register.html">Sign Up</a>
 
-        </nav>
-
-        <div class="container-3">
-
-            <h2 class="heading-2 margin-mid-t">Project 4</h2>
-            <div class="hero project-info">
-    
-                <ul>
-                    <li>
-                        <div class="detail">
-                            <div class="">Created By:</div>
-                            <div class="">Ishola Taofeek</div>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="detail">
-                            <div class="">Date Created:</div>
-                            <div class="">09/09/2020</div>
-                        </div>
-                    </li>
-
-
-                    <li>
-                        <div class="detail">
-                            <div class="">Last Updated:</div>
-                            <div class="">0/05/2021</div>
-                        </div>
-                    </li>
-
-                    <input class="btn-2" type="submit" value="Edit Project">
-                </ul>
-            </div>
-
-            
-            <div class="table">
-
-                <div class="content">
-                    <h3 class="heading-3">Project Abstract</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit quos cum necessitatibus. Non iste, veritatis deleniti autem, adipisci recusandae dolore aut nemo quidem harum doloribus, officia sequi laboriosam maxime. Ab odit quos cum necessitatibus. Non iste, veritatis deleniti autem, adipisci recusandae dolore aut nemo quidem harum doloribus, officia sequi laboriosam maxime. Ab odit quos cum necessitatibus. Non iste, veritatis deleniti autem, adipisci recusandae dolore aut nemo quidem harum doloribus, officia sequi laboriosam maxime.</p>
-                </div>
-            
-                <div class="content">
-                    <h3 class="heading-3">Project Details</h3>
-
-                    <div class="table-2">
-                        <div class="author">
-                            Author(s)
-                        </div>
-
-                        <div class="name-1">
-                            Ishola Taofeek
-                        </div>
-
-                        <div class="name-2">
-                            Ola Boluwatife
-                        </div>
-
-                        <div class="tag">
-                            #yamel, #ejs
-                        </div>
-                    </div>
-
-                    <div class="table-3">
-                        <div class="file">
-                            Project files
-                        </div>
-
-                        <div class="status">
-                            No files yploaded yet
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <footer class="main-footer ">
-                <div class="">
-                    <span>Project Explorer &copy; 2020 . </span>
-                    <span class="bold">Edconnect</span>
-                </div>
-            </footer>
-        
+            <a href="login.html">Login</a>
 
         </div>
 
-    </body>
+    </nav>
+
+    <main class="main-view-project">
+        <header class="project-header">
+            <h2>Project 4</h2>
+        </header>
+        <section id="special-border">
+
+            <div class="profile-sub-header">
+                <div>Created By</div>
+                <div>Date Created </div>
+                <div>Last Updated </div>
+                <div><button class="btn-major" type="button" id="project-btn">Edit Project</button></div>
+
+            </div>
+
+            <div class="profile-sub-header">
+                <div>Egeonu Tito </div>
+                <div>2020-03-03</div>
+                <div>2020-07-13</div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section class="page-split">
+            <div>
+                <h3>Project Abstract</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor rutrum turpis in molestie.
+                    Mauris quis convallis augue, eget lobortis nulla. Donec erat augue, vehicula eu ante a, volutpat
+                    fringilla lectus. Nam at ante pellentesque turpis accumsan volutpat. Sed fringilla elit non
+                    hendrerit blandit.
+                </p>
+            </div>
+
+            <div>
+                <h3>Project Details</h3>
+
+                <div class="project-files">
+                    <div class="project-file-container">
+                        <div class="project-file-header">
+                            <h3>Author(s)</h3>
+                        </div>
+                        <div class="project-author-name">
+                            <span>Egeonu Tito</span>
+                        </div>
+                        <div class="project-author-name">
+                            <span>Michael Jackson</span>
+                        </div>
+                        <div id="tags" class="project-file-footer">
+                            <span>#yaml, #ejs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-files">
+                    <div class="project-file-container">
+                        <div class="project-file-header">
+                            <h3>Project files</h3>
+                        </div>
+                        <div class="uploaded-files">
+                            <span>No file uploaded yet</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+    </footer>
+
+
+</body>
+
 </html>

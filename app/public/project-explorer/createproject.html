@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html>
 
-     <head>
-         <link rel="stylesheet" type="text/css" href="css/style.css">
-     </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-    <body>
+<body>
 
-        <nav class="nav">
-             <a class="nav-header white-txt" href="index.html">Project Explorer</a>
+    <nav class="nav">
+        <a class="nav-header white-txt" href="index.html">Project Explorer</a>
 
-            <form action="#" class="search">
-                <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-            </form>
+        <form action="#" class="search">
+            <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
+        </form>
 
-            <input type="submit" class="button" value="Search">
+        <input type="submit" class="button" value="Search">
 
-            <ul class="nav-list">
-                <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
-                <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
-            </ul>
+        <ul class="nav-list">
+            <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
+            <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
+        </ul>
 
-            <ul class="nav-list right">
-               <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-               <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-            </ul>
+        <ul class="nav-list right">
+            <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
+            <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
+        </ul>
 
-        </nav>
+    </nav>
 
-        <div class="container">
-            <h2 class="heading-2">Submit Project</h2>
+    <div class="container">
+        <h2 class="heading-2">Submit Project</h2>
         <form class="login-form">
 
             <div class="form-group">
                 <label for="project">Project Name:</label>
                 <input id="project" type="text" placeholder="Enter Project Name">
             </div>
-            
+
             <div class="form-group">
-                <label for="abstract">Project Abstract:</label> 
+                <label for="abstract">Project Abstract:</label>
                 <textarea id="abstract"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="author">Author(s):</label> 
+                <label for="author">Author(s):</label>
                 <input id="author" type="text" placeholder="Enter authors Name (separated by commas)">
             </div>
 
             <div class="form-group">
-                <label for="tag">Tag(s):</label> 
-                <input id="tag" type="text" placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)">
+                <label for="tag">Tag(s):</label>
+                <input id="tag" type="text"
+                    placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)">
             </div>
-            
+
             <input class="btn" type="submit" value="Continue">
         </form>
 
-            
+
+    </div>
+
+    <footer class="main-footer container-4">
+        <div class="">
+            <span>Project Explorer &copy; 2020 . </span>
+            <span class="bold">Edconnect</span>
         </div>
-        
-        <footer class="main-footer container-4">
-            <div class="">
-                <span>Project Explorer &copy; 2020 . </span>
-                <span class="bold">Edconnect</span>
-            </div>
-        </footer>
-        
-    </body>
+    </footer>
+
+</body>
+
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+    <body>
+
+        <nav class="nav">
+            <h1 class="nav-header white-txt">Project Explorer</h1>
+
+            <form action="#" class="search">
+                <input type="text" class="search-input" placeholder="Search projects">
+            </form>
+
+            <a href="#" class="search-btn">Search</a>
+
+            <ul class="nav-list">
+                <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
+                <li><a class="nav-link blue-txt" href="createproject.html">Submit</a></li>
+            </ul>
+
+            <ul class="nav-list right">
+                <li><a class="nav-link blue-txt" href="#">Signed in as:</a></li>
+                <li><a class="nav-link white-txt" href="#">Ishola Taofeek</a></li>
+                <li><a class="nav-link blue-txt" href="#">Logout</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <h2 class="heading-2">Submit Project</h2>
+        <form class="login-form">
+
+            <div class="form-group">
+                <label for="project">Project Name:</label>
+                <input id="project" type="text" placeholder="Enter Project Name">
+            </div>
+            
+            <div class="form-group">
+                <label for="abstract">Project Abstract:</label> 
+                <textarea id="abstract"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author(s):</label> 
+                <input id="author" type="text" placeholder="Enter authors Name (separated by commas)">
+            </div>
+
+            <div class="form-group">
+                <label for="tag">Tag(s):</label> 
+                <input id="tag" type="text" placeholder="Use # to tag project with different topics (e.g. #javascript, #mongodb)">
+            </div>
+            
+            <input class="btn" type="submit" value="Continue">
+        </form>
+
+            
+        </div>
+        
+        <footer class="main-footer container-4">
+            <div class="">
+                <span>Project Explorer &copy; 2020 . </span>
+                <span class="bold">Edconnect</span>
+            </div>
+        </footer>
+        
+    </body>
+</html>

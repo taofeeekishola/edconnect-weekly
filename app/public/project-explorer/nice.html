@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Project Explorer</a>
+
+            <input id="search_term" type="text" placeholder="Search Projects" />
+            <button id="search-btn" class="btn-major" type="button">Search</button>
+
+            <a href="search.html">Projects</a>
+            <a href="createProject.html">Sub</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="register.html">Sign Up</a>
+
+            <a href="login.html">Login</a>
+
+        </div>
+
+    </nav>
+
+    <main class="main-create-project">
+        <section>
+            <h3>Submit Project</h3>
+            <form>
+
+                <div class="form-row-label">
+                    <label>Project Name: </label>
+                </div>
+
+                <div class="form-row">
+                    <input name="project-name" type="text" />
+                </div>
+
+                <div class="form-row-label">
+                    <label>Project Abstract: </label>
+                </div>
+
+                <div class="form-row">
+                    <textarea name="project-abstract" rows="8"></textarea>
+                </div>
+
+                <div class="form-row-label">
+                    <label>Authors: </label>
+                </div>
+
+                <div class="form-row">
+                    <input name="authors" type="text" />
+                </div>
+
+                <div class="form-row-label">
+                    <label>Tag(s): </label>
+                </div>
+
+                <div class="form-row">
+                    <input name="tags" type="text" />
+                </div>
+
+                <div class="form-row">
+                    <button id="submit-btn" class="btn-major" type="button">Submit</button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+    </footer>
+
+
+</body>
+
+</html>

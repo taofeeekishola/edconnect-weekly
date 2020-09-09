@@ -47,15 +47,15 @@ body {
     outline: none;
 }
 
-.search-btn:link,
-.search-btn:visited {
-    padding: 1rem 1rem;
+.button {
     background-color: #007bfe;
-    color: #fff;
     border: 2px solid #fff;
     margin-left: 1rem;
     border-radius: 4px;
     font-size: 1.5rem;
+    color: white;
+    padding: 11px 15px;
+    text-align: center;
     text-decoration: none;
 }
 

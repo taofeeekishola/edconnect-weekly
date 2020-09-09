@@ -84,6 +84,7 @@ body {
 .nav-header {
     font-size: 2.5rem;
     margin-right: 2rem;
+    text-decoration: none;
 }
 
 .nav-header-2 {

@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    </head>
-    <body> 
-        <nav class="nav">
-             <a class="nav-header white-txt" href="index.html">Project Explorer</a>
+<head>
+	<title>Log In Page</title>
+	<link rel="stylesheet" href="css/style.css">
 
-            <form action="#" class="search">
-                <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-            </form>
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+			<a href="index.html">Project Explorer</a> 
 
-           <input type="submit" class="button" value="Search">
+			<input id="search_term" type="text" placeholder="Search Projects"/>
+			<button id="search-btn" class="btn-major" type="button">Search</button>
 
-            <ul class="nav-list">
-                <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
-                <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
-            </ul>
+			<a href="search.html">Projects</a> 
+			<a href="createProject.html">Submit</a> 
+		</div>
 
-            <ul class="nav-list right">
-                <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-                <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-            </ul>
+		<div class="nav-right">
+			<a href="register.html">Sign Up</a>
+		
+			<a href="login.html">Login</a> 
 
-        </nav>
+		</div>
+		
+	</nav>
 
-        <div class="container">
-            <h2 class="heading-2">Login</h2>
-            <form class="login-form">
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="Enter email">
-                </div>
+	<main class="main-login">
+		<h3>Login</h3>
+		<form>
 
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" placeholder="Password">
-                </div>
-                
-                <input type="submit" value="Login" class="btn">
-            </form>
-        </div>
+			<div class="form-row-label">
+				<label>Email Address: </label>
+			</div>
 
-        <div class="container-2">
-            <footer class="main-footer">
-                <div class="">
-                    <span>Project Explorer &copy; 2020 . </span>
-                    <span class="bold">Edconnect</span>
-                </div>
-            </footer>
-        </div>
-        
-        
-    </body>
+			<div class="form-row">
+				<input name="email" type = "text"/>
+			</div>
+			
+			<div class="form-row-label">
+				<label>Password: </label>
+			</div>
+	
+			<div class="form-row">
+				<input name="password" type = "text"/>
+			</div>
+
+			<div class="form-row">
+				<button id="submit-btn" class="btn-major" type="button">Log in</button>
+
+			</div>
+		</form>
+
+	</main>
+
+	<footer>
+	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+	</footer>
+
+	
+</body>
 </html>

@@ -1,118 +1,113 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/style.css">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
-
 <body>
-    <nav>
-        <div class="nav-left">
-            <a href="index.html">Project Explorer</a>
+	<nav>
+		<div class="nav-left">
+			<a href="index.html">Project Explorer</a> 
 
-            <input id="search_term" type="text" placeholder="Search Projects" />
-            <button id="search-btn" class="btn-major" type="button">Search</button>
+			<input id="search_term" type="text" placeholder="Search Projects"/>
+			<button id="search-btn" class="btn-major" type="button">Search</button>
 
-            <a href="search.html">Projects</a>
-            <a href="createProject.html">Submit</a>
-        </div>
+			<a href="search.html">Projects</a> 
+			<a href="createProject.html">Submit</a> 
+		</div>
 
-        <div class="nav-right">
-            <a href="register.html">Sign Up</a>
+		<div class="nav-right">
+			<a href="register.html">Sign Up</a>
+		
+			<a href="login.html">Login</a> 
 
-            <a href="login.html">Login</a>
+		</div>
+		
+	</nav>
 
-        </div>
+	<main class="main-view-project">
+		<header class="project-header">
+			<h2>Project 4</h2> 
+		</header>
+		<section id="special-border">
+			
+			<div class="profile-sub-header">
+				<div>Created By</div>
+				<div>Date Created </div>
+				<div>Last Updated </div>
+				<div><button class="btn-major" type="button" id=
+					"project-btn">Edit Project</button></div>
 
-    </nav>
+			</div>
 
-    <main class="main-view-project">
-        <header class="project-header">
-            <h2>Project 4</h2>
-        </header>
-        <section id="special-border">
+			<div class="profile-sub-header">
+				<div>Egeonu Tito </div>
+				<div>2020-03-03</div>
+				<div>2020-07-13</div>
+				<div></div>
+			</div>
+		</section>
 
-            <div class="profile-sub-header">
-                <div>Created By</div>
-                <div>Date Created </div>
-                <div>Last Updated </div>
-                <div><button class="btn-major" type="button" id="project-btn">Edit Project</button></div>
+		<section>
+			
+		</section>
 
-            </div>
+		<section class="page-split">
+			<div>
+				<h3>Project Abstract</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor rutrum turpis in molestie. Mauris quis convallis augue, eget lobortis nulla. Donec erat augue, vehicula eu ante a, volutpat fringilla lectus. Nam at ante pellentesque turpis accumsan volutpat. Sed fringilla elit non hendrerit blandit.
+				</p>
+			</div>
 
-            <div class="profile-sub-header">
-                <div>Egeonu Tito </div>
-                <div>2020-03-03</div>
-                <div>2020-07-13</div>
-                <div></div>
-            </div>
-        </section>
+			<div>
+				<h3>Project Details</h3>
 
-        <section>
+				<div class="project-files">
+					<div class="project-file-container">
+						<div class="project-file-header">
+							<h3>Author(s)</h3>
+						</div>
+						<div class="project-author-name">
+							<span>Egeonu Tito</span>
+						</div>
+						<div class="project-author-name">
+							<span>Michael Jackson</span>
+						</div>
+						<div id="tags" class="project-file-footer">
+							<span>#yaml, #ejs</span>
+						</div>
 
-        </section>
+					</div>
 
-        <section class="page-split">
-            <div>
-                <h3>Project Abstract</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor rutrum turpis in molestie.
-                    Mauris quis convallis augue, eget lobortis nulla. Donec erat augue, vehicula eu ante a, volutpat
-                    fringilla lectus. Nam at ante pellentesque turpis accumsan volutpat. Sed fringilla elit non
-                    hendrerit blandit.
-                </p>
-            </div>
+				</div>
 
-            <div>
-                <h3>Project Details</h3>
+				<div class="project-files">
+					<div class="project-file-container">
+						<div class="project-file-header">
+							<h3>Project files</h3>
+						</div>
+						<div class="uploaded-files">
+							<span>No file uploaded yet</span>
+						</div>
 
-                <div class="project-files">
-                    <div class="project-file-container">
-                        <div class="project-file-header">
-                            <h3>Author(s)</h3>
-                        </div>
-                        <div class="project-author-name">
-                            <span>Egeonu Tito</span>
-                        </div>
-                        <div class="project-author-name">
-                            <span>Michael Jackson</span>
-                        </div>
-                        <div id="tags" class="project-file-footer">
-                            <span>#yaml, #ejs</span>
-                        </div>
+					</div>
 
-                    </div>
+				</div>
 
-                </div>
-
-                <div class="project-files">
-                    <div class="project-file-container">
-                        <div class="project-file-header">
-                            <h3>Project files</h3>
-                        </div>
-                        <div class="uploaded-files">
-                            <span>No file uploaded yet</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </section>
+			</div>
+			
+			
+		</section>
 
 
-    </main>
+	</main>
 
-    <footer>
-        <p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
-    </footer>
+	<footer>
+	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+	</footer>
 
-
+	
 </body>
-
 </html>

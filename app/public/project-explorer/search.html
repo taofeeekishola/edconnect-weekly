@@ -1,99 +1,104 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Create Profile Page</title>
+	<link rel="stylesheet" href="css/style.css">
 
-    <head>
-       <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+			<a href="index.html">Project Explorer</a> 
 
-    <body>
+			<input id="search_term" type="text" placeholder="Search Projects"/>
+			<button id="search-btn" class="btn-major" type="button">Search</button>
 
-        <nav class="nav">
-             <a class="nav-header white-txt" href="index.html">Project Explorer</a>
+			<a href="search.html">Projects</a> 
+			<a href="createProject.html">Submit</a> 
+		</div>
 
-            <form action="#" class="search">
-                <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-            </form>
+		<div class="nav-right">
+			<a href="register.html">Sign Up</a>
+		
+			<a href="login.html">Login</a> 
 
-            <input type="submit" class="button" value="Search">
+		</div>
+		
+	</nav>
 
-            <ul class="nav-list">
-                <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
-                <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
-            </ul>
+	<main class="main-search">
 
-            <ul class="nav-list right">
-               <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-               <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-            </ul>
+		<header class="search-header">
+			<h2>Project Gallery</h2> 
+		</header>
+		<section id="special-border">
+			
+			<div class="search-row">
+				<div class="search-col-1">
+					<input name="search-param" type = "text"/>
+				</div>
+				<div class="search-col-2">
+					<div class="search-col">
+							<div class="container">
+								<div id="search-criteria-label"> 
+									Search by
+								</div>
+								<select name="search-criteria">
+									<option value="project-name">Project Name</option>
+									<option value="project-description">Project Description</option>
+									<option value="program">Program</option>
+									<option value="authors">Authors</option>
+									<option value="tags">Tags</option>
+								</select>	
+							</div>
+												
+					</div>	
+					<div class="search-col">
+						<button id="search-btn-larger" class="btn-major" type="button">Submit</button>
+					</div>
+				</div>
+				
+			</div>
 
-        </nav>
-        
-        <div class="container container-4">
-            <h2 class="heading-2">Project Gallery</h2>
+		</section>
 
-            <div class="search-bar">
-                <form action="#" class="search-bar-form">
-                    <input type="text" class="search-bar-input" placeholder="Search project name, authors, abstract, tags">
+		<header class="project-header">
+			<h3> All Projects</h3>
+			<span>(3 results)</span>
 
-                    <label class="select-label" for="box-search">Search by</label>  
-                    <select id="box-search">
-                        <option value="Name">Name</option>
-                    </select>
+		</header>
+		<section class="project-list">
+			<div>
+				<h4> Project 3</h4>
+				<p id="authors">Henry James, Bola Ade</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
 
-                </form>
+				<p id="tags">#yaml,     #ejs </p>
 
-                <a href="#" class="link-btn blue-btn">Submit</a>
-            </div>
+				
+			</div>
+			
+			<div>
+				<h4> Project 2</h4>
+				<p id="authors">Bola Tito, Bade Thomas</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
 
-            <h3 class="heading-3">All projects</h3>
+				<p id="tags">#python,     #django </p>			
+			</div>
+			
+			<div>
+				<h4> Project 1</h4>
+				<p id="authors">Tito Egeonu, Michael Jackson</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
 
-            
+				<p id="tags">#css,     #node </p>
+			</div>
+			
+		</section>
+	</main>
 
-                
-                 <div class="gallery">
-
-                     <div class="item">
-                         <h3>Project 4</h3>
-                         <p id="name">Ishola Taofeek, Ola Bolu</p>
-                         <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                             necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                         <p id='tags'>#yamil #ajs</p>
-                     </div>
-
-                     <div class="item">
-                         <h3>Project 3</h3>
-                         <p id="name">Ishola Ibrahim, Shereki Irede</p>
-                         <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                             necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                         <p id='tags'>#css #html</p>
-                     </div>
-
-                     <div class="item">
-                         <h3>Project 2</h3>
-                         <p id="name">Awojemila Taiwo, Sulemian Taiwo</p>
-                         <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                             necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                         <p id='tags'>#ejs #ci</p>
-                     </div>
-
-                     <div class="item">
-                         <h3>Project 1</h3>
-                         <p id="name">Bawo Ore, Abdulrazaq Abdulrazaq</p>
-                         <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                             necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                         <p id='tags'>#javascript #mongodb</p>
-                     </div>
-
-                 </div>
-                <footer class="main-footer">
-                    <div class="">
-                        <span>Project Explorer &copy; 2020 . </span>
-                        <span class="bold">Edconnect</span>
-                    </div>
-                </footer>
-        </div>
-
-        
-        
-    </body>
+	<footer>
+	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+	</footer>
+</body>
 </html>

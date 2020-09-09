@@ -1,88 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+			<a href="index.html">Project Explorer</a> 
+
+			<input id="search_term" type="text" placeholder="Search Projects"/>
+			<button id="search-btn" class="btn-major" type="button">Search</button>
+
+			<a href="search.html">Projects</a> 
+			<a href="createProject.html">Submit</a> 
+		</div>
+
+		<div class="nav-right">
+			<a href="register.html">Sign Up</a>
+		
+			<a href="login.html">Login</a> 
+
+		</div>
+		
+	</nav>
+
+	<main class="main-home">
+		<section id="special-border">
+			<h2>Welcome to Project Explorer</h2>
+			<p>
+				Project Explorer is a repository for final year projects across all departments at your institution. You can upload and search projects and learn from others.
+			</p>
+			<button class="btn-major" type="button">Get Started</button>
+			<button class="btn-minor" type="button">Login</button>
+
+		</section>
+
+		<section class="project-list">
+			<div>
+				<h4> Project 3</h4>
+				<p id="authors">Henry James, Bola Ade</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
+
+				<p id="tags">#yaml,     #ejs </p>
+
+				
+			</div>
+			
+			<div>
+				<h4> Project 2</h4>
+				<p id="authors">Bola Tito, Bade Thomas</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
+
+				<p id="tags">#python,     #django </p>			
+			</div>
+			
+			<div>
+				<h4> Project 1</h4>
+				<p id="authors">Tito Egeonu, Michael Jackson</p>
+				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
+
+				<p id="tags">#css,     #node </p>
+			</div>
+			
+		</section>
 
 
-        <nav class="nav">
-             <a class="nav-header white-txt" href="index.html">Project Explorer</a>
-
-            <form action="#" class="search">
-                <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-            </form>
-
-           <input type="submit" class="button" value="Search">
-
-            <ul class="nav-list">
-                <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
-                <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
-            </ul>
 
 
-            <ul class="nav-list right">
-                <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-                <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-            </ul>
+	</main>
 
-        </nav>
+	<footer>
+	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+	</footer>
 
-
-        <div class="container container-2">
-            <div class="hero">
-                <h2 class="heading-2 margin-mid-b">Welcome to Project Explorer</h2>
-                <p>Project Explorer is a repository for final year projrcts accross all departments at your instution. You can upload and search projects and learn from others</p>
-                
-                <a href="#" class="link-btn blue-btn">Get Started</a>
-                <a href="#" class="link-btn grey-btn">Login</a>
-            </div>
-            
-            <div class="gallery">
-
-                <div class="item">
-                    <h3>Project 4</h3>
-                    <p id="name">Ishola Taofeek, Ola Bolu</p>
-                    <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                    <p id='tags'>#yamil   #ajs</p>
-                </div>
-
-                <div class="item">
-                    <h3>Project 3</h3>
-                    <p id="name">Ishola Ibrahim, Shereki Irede</p>
-                    <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                        necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                    <p id='tags'>#css #html</p>
-                </div>
-
-                <div class="item">
-                    <h3>Project 2</h3>
-                    <p id="name">Awojemila Taiwo, Sulemian Taiwo</p>
-                    <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                        necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                    <p id='tags'>#ejs #ci</p>
-                </div>
-
-                <div class="item">
-                    <h3>Project 1</h3>
-                    <p id="name">Bawo Ore, Abdulrazaq Abdulrazaq</p>
-                    <p id="under">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae illum ab
-                        necessitatibus saepe totam provident tenetur quos amet voluptatem aliquam.</p>
-                    <p id='tags'>#javascript #mongodb</p>
-                </div>
-
-            </div>
-
-            <footer class="main-footer">
-                <div class="">
-                    <span>Project Explorer &copy; 2020 . </span>
-                    <span class="bold">Edconnect</span>
-                </div>
-            </footer>
-            
-        </div>
-
-        
-    </body>
-
+	
+</body>
 </html>

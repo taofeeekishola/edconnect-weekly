@@ -1,137 +1,135 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <nav class="nav">
-        <a class="nav-header white-txt" href="index.html">Project Explorer</a>
+	<nav>
+		<div class="nav-left">
+			<a href="index.html">Project Explorer</a> 
 
-        <form action="#" class="search">
-            <input type="text" class="search-input" placeholder="Search Projects" value="Search Projects">
-        </form>
+			<input id="search_term" type="text" placeholder="Search Projects"/>
+			<button id="search-btn" class="btn-major" type="button">Search</button>
 
-        <input type="submit" class="button" value="Search">
+			<a href="search.html">Projects</a> 
+			<a href="createProject.html">Submit</a> 
+		</div>
 
-        <ul class="nav-list">
-            <li><a class="nav-link blue-txt" href="search.html">Projects</a></li>
-            <li><a class="nav-link blue-txt" href="createProject.html">Submit</a></li>
-        </ul>
+		<div class="nav-right">
+			<a href="register.html">Sign Up</a>
+		
+			<a href="login.html">Login</a> 
 
-        <ul class="nav-list right">
-            <li><a class="nav-link blue-txt" href="register.html">Signup</a></li>
-            <li><a class="nav-link blue-txt" href="login.html">Login</a></li>
-        </ul>
+		</div>
+		
+	</nav>
 
-    </nav>
+	<main class="main-edit-project">
+		<header class="project-header">
+			<h2>Project 4</h2> 
+		</header>
+		<section id="special-border">
+			
+			<div class="profile-sub-header">
+				<div>Created By</div>
+				<div>Date Created </div>
+				<div>Last Updated </div>
+				<div><button class="btn-major" type="button" id=
+					"project-btn">View Project</button></div>
 
-    <div class="container-3">
+			</div>
 
-        <h2 class="heading-2 margin-mid-t">Project 4</h2>
+			<div class="profile-sub-header">
+				<div>Egeonu Tito </div>
+				<div>2020-03-03</div>
+				<div>2020-07-13</div>
+				<div></div>
+			</div>
+		</section>
 
-        <div class="hero project-info">
+		<section class= "page-split">
+			<div>
+				<header>
+					<h3>Edit Project</h3> 
+				</header>
 
-            <ul>
-                <li>
-                    <div class="detail">
-                        <div class="">Created By:</div>
-                        <div class="">Ishola Taofeek</div>
-                    </div>
-                </li>
+				<form>
+					<div class="form-row-label">
+						<label>Project Name: </label>
+					</div>
 
-                <li>
-                    <div class="detail">
-                        <div class="">Date Created:</div>
-                        <div class="">09/09/2020</div>
-                    </div>
-                </li>
+					<div class="form-row">
+						<input name="project-name" type = "text"/>
+					</div>
 
+					<div class="form-row-label">
+						<label>Project Abstract: </label>
+					</div>
 
-                <li>
-                    <div class="detail">
-                        <div class="">Last Updated:</div>
-                        <div class="">05/05/2021</div>
-                    </div>
-                </li>
+					<div class="form-row">
+						<textarea name="project-abstract" rows="8" ></textarea>
+					</div>
 
-                <input class="btn-2" type="submit" value="View Project">
-            </ul>
+					<div class="form-row-label">
+						<label>Authors: </label>
+					</div>
 
-        </div>
+					<div class="form-row">
+						<input name="authors" type = "text"/>
+					</div>
+				
+					<div class="form-row-label">
+						<label>Tag(s): </label>
+					</div>
 
+					<div class="form-row">
+						<input name="tags" type = "text"/>
+					</div>
+		
+					<div class="form-row">
+						<button id="submit-btn" class="btn-major" type="button">Save</button>
+					</div>
+				</form>
+			</div>
 
+			<div>
+				<header>
+					<h3>Manage Project files</h3> 
+				</header>
 
-        <div class="table">
+				<div class="container" id="browse">
+					<input name="tags" type = "text"/>
 
+					<button id="browse-btn" class="btn-minor" type="button">Browse</button>
+				</div>
 
-            <form class="login-form">
-                <h3 class="heading-3 heading-bottom-border">Edit Project</h3>
+				<div class="project-files">
+					<div class="project-file-container">
+						<div class="project-file-header">
+							<h3>Project files</h3>
+						</div>
+						<div class="uploaded-files">
+							<span>No file uploaded yet</span>
+						</div>
 
-                <div class="form-group">
-                    <label for="project">Project Name:</label>
-                    <input id="project" type="text" value="Project 4">
-                </div>
+					</div>
 
-                <div class="form-group">
-                    <label for="abstract">Project Abstract:</label>
-                    <textarea id="abstract">Lorem ipsum dolor sit.</textarea>
-                </div>
+				</div>
 
-                <div class="form-group">
-                    <label for="author">Authors:</label>
-                    <input id="author" type="text" value="Ade Ade, Brian James">
-                </div>
+			</div>
 
-                <div class="form-group">
-                    <label for="tag">Tag(s):</label>
-                    <input id="tag" type="text" value="#yaml, #ejs">
-                </div>
+			
 
-
-
-                <input class="btn" type="submit">
-            </form>
-
-            <div class="">
-                <form class="login-form">
-
-                    <h3 class="heading-3 heading-bottom-border">Manage project files</h3>
-
-                    <div class="two-row">
-                        <input type="text" class="file-bar-input" placeholder="Click to ope File browser">
-                        <input id="file-search" type="submit" value="Browse">
-                        </input>
-                    </div>
-
-                </form>
-
-                <div class="table-3">
-                    <div class="file">
-                        Project files
-                    </div>
-
-                    <div class="status">
-                        No files yploaded yet
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <footer class="main-footer">
-            <div class="">
-                <span>Project Explorer &copy; 2020 . </span>
-                <span class="bold">Edconnect</span>
-            </div>
-        </footer>
-
-    </div>
+		</section>
 
 
+	</main>
+
+	<footer>
+	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
+	</footer>
+
+	
 </body>
-
 </html>

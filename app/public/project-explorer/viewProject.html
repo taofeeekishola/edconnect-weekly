@@ -1,113 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Home Page</title>
-	<link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
-	<nav>
-		<div class="nav-left">
-			<a href="index.html">Project Explorer</a> 
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-			<input id="search_term" type="text" placeholder="Search Projects"/>
-			<button id="search-btn" class="btn-major" type="button">Search</button>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<a href="search.html">Projects</a> 
-			<a href="createProject.html">Submit</a> 
-		</div>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <form class="form-inline my-2 my-lg-0" name="prp">
+                    <input id="search_term" class="form-control mr-sm-2" type="text" placeholder="Search Projects" />
+                    <button id="search-btn" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
-		<div class="nav-right">
-			<a href="register.html">Sign Up</a>
-		
-			<a href="login.html">Login</a> 
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createProject.html">Submit</a>
+                    <li>
+                </ul>
 
-		</div>
-		
-	</nav>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    <li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    <li>
+                </ul>
+            </div>
+        </nav>
 
-	<main class="main-view-project">
-		<header class="project-header">
-			<h2>Project 4</h2> 
-		</header>
-		<section id="special-border">
-			
-			<div class="profile-sub-header">
-				<div>Created By</div>
-				<div>Date Created </div>
-				<div>Last Updated </div>
-				<div><button class="btn-major" type="button" id=
-					"project-btn">Edit Project</button></div>
+        <div class="container mt-5 mb-5">
+            <div class="row pl-3">
+                <h2>Project 4</h2>
+            </div>
+           	<div class="jumbotron" id="special-jumbotron">
+           	    <div class="row">
+           	        <div class="col-3">Created By: </div>
+           	        <div class="col-3">Date Created: </div>
+           	        <div class="col-4">Last Updated: </div>
+           	        <div class="col-2"><a href="editProject.html" class="btn btn-primary" type="button"
+           	                id="project-btn">Edit Project</a></div>
+           	    </div>
 
-			</div>
+           	    <div class="row">
+           	        <div class="col-3">Ishola Taofeek</div>
+           	        <div class="col-3">2020-03-03</div>
+           	        <div class="col-6">2020-07-13</div>
+           	    </div>
+           	</div>
+        </div>
 
-			<div class="profile-sub-header">
-				<div>Egeonu Tito </div>
-				<div>2020-03-03</div>
-				<div>2020-07-13</div>
-				<div></div>
-			</div>
-		</section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h4>Project Abstract</h4>
+                    <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nemo provident consequatur totam sit quo molestiae, tempora ex mollitia, eos doloribus, maxime deleniti. Architecto nesciunt nihil consectetur nostrum, temporibus quidem commodi dolor, voluptates cumque quia at sed deleniti deserunt, est quibusdam perspiciatis explicabo error. Voluptas impedit vitae fugiat perferendis blanditiis commodi, porro laboriosam eaque. Asperiores facere tenetur in adipisci, ab aliquid ut nobis tempore totam reprehenderit eligendi voluptatibus. Incidunt quia aliquam eius provident fuga, itaque magni assumenda, deserunt, repellendus porro vero. Placeat accusamus, ratione recusandae earum explicabo, ab consequatur blanditiis repellendus voluptate facere, modi ipsa aut ipsam! Provident, odio ad.</p>
+                    <form>
 
-		<section>
-			
-		</section>
+                        <div class="form-group">
+                            <label for="comments">Comments:</label>
+                            <textarea name="comments" class="form-control" id="comments" rows="6"> </textarea>
+                        </div>
 
-		<section class="page-split">
-			<div>
-				<h3>Project Abstract</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor rutrum turpis in molestie. Mauris quis convallis augue, eget lobortis nulla. Donec erat augue, vehicula eu ante a, volutpat fringilla lectus. Nam at ante pellentesque turpis accumsan volutpat. Sed fringilla elit non hendrerit blandit.
-				</p>
-			</div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                    <hr>
+                    <p class="text-center">
+                        No comments added yet
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>Project Details</h4>
+                    <div class="pt-3">
+                         <div class="card">
+                             <div class="card-header">
+                                 <h5>Author(s)</h5>
+                             </div>
+                             <ul class="list-group list-group-flush">
+                                 <li class="list-group-item">Ishola Taofeek</li>
+                                 <li class="list-group-item">Ola Boluwatife</li>
+                             </ul>
+                             <div class="card-footer">
+                                 <p class="text-primary">#yami, #efe</p>
+                             </div>
+                         </div>
+                         <div class="card mt-3">
+                             <div class="card-header">
+                                 <h5>Project files</h5>
+                             </div>
+                             <div class="card-body">
+                                 <p class="text-center">No file uploaded yet</p>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div>
-				<h3>Project Details</h3>
-
-				<div class="project-files">
-					<div class="project-file-container">
-						<div class="project-file-header">
-							<h3>Author(s)</h3>
-						</div>
-						<div class="project-author-name">
-							<span>Egeonu Tito</span>
-						</div>
-						<div class="project-author-name">
-							<span>Michael Jackson</span>
-						</div>
-						<div id="tags" class="project-file-footer">
-							<span>#yaml, #ejs</span>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="project-files">
-					<div class="project-file-container">
-						<div class="project-file-header">
-							<h3>Project files</h3>
-						</div>
-						<div class="uploaded-files">
-							<span>No file uploaded yet</span>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-			
-			
-		</section>
-
-
-	</main>
-
-	<footer>
-	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
-	</footer>
-
-	
-</body>
+        <div class="container pt-2 mt-5 ">
+            <div class="row">
+                <div class="col-sm-12 jumbotron" id="footer-jumbotron">
+                    <p class="float-sm-right">Project Explorer <span>&#169;</span> 2020-<b>Edconnect</b></p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

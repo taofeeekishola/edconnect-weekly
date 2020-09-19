@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Log In Page</title>
-	<link rel="stylesheet" href="css/style.css">
+     <head>
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/style.css">
+     </head>
 
-</head>
-<body>
-	<nav>
-		<div class="nav-left">
-			<a href="index.html">Project Explorer</a> 
+     <body>
+         <nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-primary">
+             <a class="navbar-brand" href="index.html">Project Explorer</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
 
-			<input id="search_term" type="text" placeholder="Search Projects"/>
-			<button id="search-btn" class="btn-major" type="button">Search</button>
+             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                 <form class="form-inline my-2 my-lg-0" name="prp">
+                     <input id="search_term" class="form-control mr-sm-2" type="text" placeholder="Search Projects" />
+                     <button id="search-btn" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                 </form>
 
-			<a href="search.html">Projects</a> 
-			<a href="createProject.html">Submit</a> 
-		</div>
+                 <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                         <a class="nav-link" href="search.html">Projects</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="createProject.html">Submit</a>
+                     <li>
+                 </ul>
 
-		<div class="nav-right">
-			<a href="register.html">Sign Up</a>
-		
-			<a href="login.html">Login</a> 
+                 <ul class="navbar-nav float-right">
+                     <li class="nav-item">
+                         <a class="nav-link" href="register.html">Sign Up</a>
+                     <li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="login.html">Login</a>
+                     <li>
+                 </ul>
+             </div>
+         </nav>
+         
 
-		</div>
-		
-	</nav>
+            <div class="container">
+                <div class="row w-100 py-5 justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <h1 class="text center">Login</h1>
+                        <form class="form-container">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
 
-	<main class="main-login">
-		<h3>Login</h3>
-		<form>
-
-			<div class="form-row-label">
-				<label>Email Address: </label>
-			</div>
-
-			<div class="form-row">
-				<input name="email" type = "text"/>
-			</div>
-			
-			<div class="form-row-label">
-				<label>Password: </label>
-			</div>
-	
-			<div class="form-row">
-				<input name="password" type = "text"/>
-			</div>
-
-			<div class="form-row">
-				<button id="submit-btn" class="btn-major" type="button">Log in</button>
-
-			</div>
-		</form>
-
-	</main>
-
-	<footer>
-	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
-	</footer>
-
-	
-</body>
+        <div class="container pt-2 mt-5 ">
+            <div class="row">
+                <div class="col-sm-12 jumbotron" id="footer-jumbotron">
+                    <p class="float-sm-right">Project Explorer <span>&#169;</span> 2020-<b>Edconnect</b></p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
 </html>

@@ -1,80 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Home Page</title>
-	<link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-	<nav>
-		<div class="nav-left">
-			<a href="index.html">Project Explorer</a> 
-
-			<input id="search_term" type="text" placeholder="Search Projects"/>
-			<button id="search-btn" class="btn-major" type="button">Search</button>
-
-			<a href="search.html">Projects</a> 
-			<a href="createProject.html">Submit</a> 
-		</div>
-
-		<div class="nav-right">
-			<a href="register.html">Sign Up</a>
-		
-			<a href="login.html">Login</a> 
-
-		</div>
-		
-	</nav>
-
-	<main class="main-home">
-		<section id="special-border">
-			<h2>Welcome to Project Explorer</h2>
-			<p>
-				Project Explorer is a repository for final year projects across all departments at your institution. You can upload and search projects and learn from others.
-			</p>
-			<button class="btn-major" type="button">Get Started</button>
-			<button class="btn-minor" type="button">Login</button>
-
-		</section>
-
-		<section class="project-list">
-			<div>
-				<h4> Project 3</h4>
-				<p id="authors">Henry James, Bola Ade</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#yaml,     #ejs </p>
-
-				
-			</div>
+    <head>
+           <link rel="stylesheet" href="css/bootstrap.min.css">
+           <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+			<nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-primary">
+				<a class="navbar-brand" href="index.html">Project Explorer</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+					aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			
-			<div>
-				<h4> Project 2</h4>
-				<p id="authors">Bola Tito, Bade Thomas</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#python,     #django </p>			
-			</div>
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<form class="form-inline my-2 my-lg-0" name="prp">
+						<input id="search_term" class="form-control mr-sm-2" type="text" placeholder="Search Projects" />
+						<button id="search-btn" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+					</form>
 			
-			<div>
-				<h4> Project 1</h4>
-				<p id="authors">Tito Egeonu, Michael Jackson</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#css,     #node </p>
-			</div>
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="search.html">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="createProject.html">Submit</a>
+						<li>
+					</ul>
 			
-		</section>
+					<ul class="navbar-nav float-right">
+						<li class="nav-item">
+							<a class="nav-link" href="register.html">Sign Up</a>
+						<li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						<li>
+					</ul>
+				</div>
+			</nav>
+        
+            
+                <div id='main' class="container rounded mt-4">
+					<div class="jumbotron">
+                            <div class="container">
+                                <h2>Welcome to Project Explorer</h2>
+                                <p>Project Explorer is a repository for final year projects accross all departments at
+                                    your
+                                    instution. You can upload and search projects and learn from others</p>
+                                <button class="btn btn-primary" type="submit">Get Started</button>
+                                <button class="btn btn-secondary" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        
 
+        
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center border-primary">
+                            <div class="card-body text-left">
+                                <h3 class="text-primary">Project 4</h3>
+                                <p>Ishola Taofeek, Ola Boluwatife</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                <p class="text-primary">#yami #efe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center border-primary">
+                            <div class="card-body text-left">
+                                <h3 class="text-primary">Project 3</h3>
+                                <p>Ishola Taofeek, Ola Boluwatife</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                <p class="text-primary">#css #html</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-sm-6">
+                         <div class="card text-center border-primary">
+                             <div class="card-body text-left">
+                                 <h3 class="text-primary">Project 3</h3>
+                                 <p>Ishola Taofeek, Ola Boluwatife</p>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                 <p class="text-primary">#css #html</p>
+                             </div>
+                         </div>
+                     </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center border-primary">
+                            <div class="card-body text-left">
+                                <h3 class="text-primary">Project 1</h3>
+                                <p>Ishola Taofeek, Ola Boluwatife</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                <p class="text-primary">#javascript #mongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+       
+        <div class="container pt-2 mt-5 ">
+            <div class="row">
+                <div class="col-sm-12 jumbotron" id="footer-jumbotron">
+                    <p class="float-sm-right">Project Explorer <span>&#169;</span> 2020-<b>Edconnect</b></p>
+                </div>
+            </div>
+        </div>
+    </body>
 
-
-	</main>
-
-	<footer>
-	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
-	</footer>
-
-	
-</body>
 </html>

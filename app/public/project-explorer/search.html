@@ -1,104 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Create Profile Page</title>
-	<link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
-	<nav>
-		<div class="nav-left">
-			<a href="index.html">Project Explorer</a> 
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-			<input id="search_term" type="text" placeholder="Search Projects"/>
-			<button id="search-btn" class="btn-major" type="button">Search</button>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark navbar-static-top bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<a href="search.html">Projects</a> 
-			<a href="createProject.html">Submit</a> 
-		</div>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <form class="form-inline my-2 my-lg-0" name="prp">
+                    <input id="search_term" class="form-control mr-sm-2" type="text" placeholder="Search Projects" />
+                    <button id="search-btn" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
-		<div class="nav-right">
-			<a href="register.html">Sign Up</a>
-		
-			<a href="login.html">Login</a> 
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createProject.html">Submit</a>
+                    <li>
+                </ul>
 
-		</div>
-		
-	</nav>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    <li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    <li>
+                </ul>
+            </div>
+        </nav>
+        
+         <div class="container mt-5 mb-5">
+             <div class="row pl-3">
+                 <h2>Photo Gallery</h2>
+             </div>
+             <div class="jumbotron" id="special-jumbotron">
+                   <form class="form-inline col-sm-12">
+                       <input type="text" class="form-control mr-2 col-md-8" placeholder="Search project name,authors,abstract,tags">
+                        <div class="input-group mr-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-light" type="button">Search by</button>
+                            </div>
+                            <select class="form-control " aria-describedby="basic-addon1">
+                                <option>Name</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                   </form> 
+             </div>
+         </div>
 
-	<main class="main-search">
+         <div class="py-2">
+             <div class="container">
+                 <div class="row">
+                    <div id="inline-header">
+                        <span class="h4 pull-left pl-3">All Projects</span>
+                        <medium class="text-muted">(3 results)</medium>
+                    </div>
+                 </div>
+                 <div class="row">
+                     <div class="ol-12 col-md-3 col-sm-6">
+                         <div class="card text-center border-primary">
+                             <div class="card-body text-left">
+                                 <h3 class="text-primary">Project 4</h3>
+                                 <p>Ishola Taofeek, Ola Boluwatife</p>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                 <p class="text-primary">#yami #efe</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                         <div class="card text-center border-primary">
+                             <div class="card-body text-left">
+                                 <h3 class="text-primary">Project 3</h3>
+                                 <p>Ishola Taofeek, Ola Boluwatife</p>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                 <p class="text-primary">#css #html</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                         <div class="card text-center border-primary">
+                             <div class="card-body text-left">
+                                 <h3 class="text-primary">Project 3</h3>
+                                 <p>Ishola Taofeek, Ola Boluwatife</p>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                 <p class="text-primary">#css #html</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                         <div class="card text-center border-primary">
+                             <div class="card-body text-left">
+                                 <h3 class="text-primary">Project 1</h3>
+                                 <p>Ishola Taofeek, Ola Boluwatife</p>
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, accusamus?</p>
+                                 <p class="text-primary">#javascript #mongoDB</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
 
-		<header class="search-header">
-			<h2>Project Gallery</h2> 
-		</header>
-		<section id="special-border">
-			
-			<div class="search-row">
-				<div class="search-col-1">
-					<input name="search-param" type = "text"/>
-				</div>
-				<div class="search-col-2">
-					<div class="search-col">
-							<div class="container">
-								<div id="search-criteria-label"> 
-									Search by
-								</div>
-								<select name="search-criteria">
-									<option value="project-name">Project Name</option>
-									<option value="project-description">Project Description</option>
-									<option value="program">Program</option>
-									<option value="authors">Authors</option>
-									<option value="tags">Tags</option>
-								</select>	
-							</div>
-												
-					</div>	
-					<div class="search-col">
-						<button id="search-btn-larger" class="btn-major" type="button">Submit</button>
-					</div>
-				</div>
-				
-			</div>
 
-		</section>
-
-		<header class="project-header">
-			<h3> All Projects</h3>
-			<span>(3 results)</span>
-
-		</header>
-		<section class="project-list">
-			<div>
-				<h4> Project 3</h4>
-				<p id="authors">Henry James, Bola Ade</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#yaml,     #ejs </p>
-
-				
-			</div>
-			
-			<div>
-				<h4> Project 2</h4>
-				<p id="authors">Bola Tito, Bade Thomas</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#python,     #django </p>			
-			</div>
-			
-			<div>
-				<h4> Project 1</h4>
-				<p id="authors">Tito Egeonu, Michael Jackson</p>
-				<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate arcu ut venenatis congue. </p>
-
-				<p id="tags">#css,     #node </p>
-			</div>
-			
-		</section>
-	</main>
-
-	<footer>
-	  	<p>Project Explorer @ 2020 <a href="mailto:teetoegeonu@gmail.com">Egeonu Tito</a></p>
-	</footer>
-</body>
+         
+         <div class="container pt-2 mt-5 ">
+             <div class="row">
+                 <div class="col-sm-12 jumbotron" id="footer-jumbotron">
+                     <p class="float-sm-right">Project Explorer <span>&#169;</span> 2020-<b>Edconnect</b></p>
+                 </div>
+             </div>
+         </div>
+    </body>
 </html>

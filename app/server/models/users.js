@@ -20,11 +20,11 @@ class User {
 class Users extends DataModel {
     authenticate(email, password) {
         for (let i = 0; i < this.data.length; i++){
-            if (this.data.email[i] == email && this.data[i].password == password){
+            if (this.data[i].email == email && this.data[i].password == password){
                 return true;
             }
-            return false;
         }
+        return false;
     }
 
     getByEmail(email) {
@@ -53,14 +53,14 @@ class Users extends DataModel {
         }
 
         for(let i = 0; i < this.data.length; i++){
-            if(this.data[i].email == this.email){
+            if(this.data[i].email == obj.email){
                 test2 = false;
                 break;
             }
         }
 
         for (let i = 0; i < this.data.length; i++){
-            if(this.data[i].matricNumber == this.matricNumber){
+            if(this.data[i].matricNumber == obj.matricNumber){
                 test3 = false;
                 break;
             }

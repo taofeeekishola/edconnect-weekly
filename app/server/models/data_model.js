@@ -40,7 +40,7 @@ class DataModel {
     delete(id) {
         for(let i=0; i < this.data.length; i++){
             if(this.data[i].id == id){
-                delete this.data[i]
+                this.data.splice(i,1)
             }
             return true;
         }

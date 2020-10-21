@@ -15,9 +15,7 @@ class Projects extends DataModel {
     validate(obj) {
         let test1 = true, test2 = true;
 
-        if(Array.isArray(obj.authors) && Array.isArray(obj.tags)){
-            return test1;
-        }else{
+        if(!Array.isArray(obj.authors) || !Array.isArray(obj.tags)){
             test1 = false;
         }
 

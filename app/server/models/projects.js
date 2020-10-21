@@ -15,11 +15,12 @@ class Projects extends DataModel {
     validate(obj) {
         let test1 = true, test2 = true;
 
-        if(!Array.isArray(obj.authors) || !Array.isArray(obj.tags)){
-            test1 = false;
+        if (!Array.isArray(obj.authors) || !Array.isArray(obj.tags)) {
+              test1 = false;
         }
 
-        if(obj.id.length == 0 || obj.name.length == 0 || obj.abstract.length == 0 || obj.author.length == 0 || obj.tags.length == 0 || obj.createdBy.length == 0){
+
+        if(obj.id.length == 0 || obj.name.length == 0 || obj.abstract.length == 0 || obj.authors.length == 0 || obj.tags.length == 0 || obj.createdBy.length == 0){
             test2 = false;
         }
 

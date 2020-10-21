@@ -38,13 +38,17 @@ class DataModel {
     }
 
     delete(id) {
+        let originalLenght = this.data.length
         for(let i=0; i < this.data.length; i++){
             if(this.data[i].id == id){
                 this.data.splice(i,1)
             }
-            return true;
+           
         }
-        return false;
+       if(this.data.length < originalLenght){
+           return true;
+       }
+       return false;
     }
 
     // this method will be overriden in the sub classes
